@@ -1,0 +1,14 @@
+# Target labels
+ glfw-populate
+# Source files and their labels
+D:/ProgramowanieGrafiki3D/cmake-build-debug/_deps/glfw-subbuild/CMakeFiles/glfw-populate
+D:/ProgramowanieGrafiki3D/cmake-build-debug/_deps/glfw-subbuild/CMakeFiles/glfw-populate.rule
+D:/ProgramowanieGrafiki3D/cmake-build-debug/_deps/glfw-subbuild/CMakeFiles/glfw-populate-complete.rule
+D:/ProgramowanieGrafiki3D/cmake-build-debug/_deps/glfw-subbuild/glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-build.rule
+D:/ProgramowanieGrafiki3D/cmake-build-debug/_deps/glfw-subbuild/glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-configure.rule
+D:/ProgramowanieGrafiki3D/cmake-build-debug/_deps/glfw-subbuild/glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-download.rule
+D:/ProgramowanieGrafiki3D/cmake-build-debug/_deps/glfw-subbuild/glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-install.rule
+D:/ProgramowanieGrafiki3D/cmake-build-debug/_deps/glfw-subbuild/glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-mkdir.rule
+D:/ProgramowanieGrafiki3D/cmake-build-debug/_deps/glfw-subbuild/glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-patch.rule
+D:/ProgramowanieGrafiki3D/cmake-build-debug/_deps/glfw-subbuild/glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-test.rule
+D:/ProgramowanieGrafiki3D/cmake-build-debug/_deps/glfw-subbuild/glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-update.rule

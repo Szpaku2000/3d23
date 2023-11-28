@@ -4,8 +4,8 @@
 namespace {
     char *copy_string_to_char(std::string str, const std::string &suffix = "") {
         auto line = new char[str.size() + suffix.size() + 1];
-        std::memcpy(line, str.c_str(), str.size());
-        std::memcpy(line + str.size(), suffix.c_str(), suffix.size());
+        memcpy(line, str.c_str(), str.size());
+        memcpy(line + str.size(), suffix.c_str(), suffix.size());
         line[str.size() + suffix.size()] = '\0';
         return line;
     }

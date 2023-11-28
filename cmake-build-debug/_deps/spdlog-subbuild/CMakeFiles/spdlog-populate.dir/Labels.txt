@@ -1,0 +1,14 @@
+# Target labels
+ spdlog-populate
+# Source files and their labels
+D:/ProgramowanieGrafiki3D/cmake-build-debug/_deps/spdlog-subbuild/CMakeFiles/spdlog-populate
+D:/ProgramowanieGrafiki3D/cmake-build-debug/_deps/spdlog-subbuild/CMakeFiles/spdlog-populate.rule
+D:/ProgramowanieGrafiki3D/cmake-build-debug/_deps/spdlog-subbuild/CMakeFiles/spdlog-populate-complete.rule
+D:/ProgramowanieGrafiki3D/cmake-build-debug/_deps/spdlog-subbuild/spdlog-populate-prefix/src/spdlog-populate-stamp/spdlog-populate-build.rule
+D:/ProgramowanieGrafiki3D/cmake-build-debug/_deps/spdlog-subbuild/spdlog-populate-prefix/src/spdlog-populate-stamp/spdlog-populate-configure.rule
+D:/ProgramowanieGrafiki3D/cmake-build-debug/_deps/spdlog-subbuild/spdlog-populate-prefix/src/spdlog-populate-stamp/spdlog-populate-download.rule
+D:/ProgramowanieGrafiki3D/cmake-build-debug/_deps/spdlog-subbuild/spdlog-populate-prefix/src/spdlog-populate-stamp/spdlog-populate-install.rule
+D:/ProgramowanieGrafiki3D/cmake-build-debug/_deps/spdlog-subbuild/spdlog-populate-prefix/src/spdlog-populate-stamp/spdlog-populate-mkdir.rule
+D:/ProgramowanieGrafiki3D/cmake-build-debug/_deps/spdlog-subbuild/spdlog-populate-prefix/src/spdlog-populate-stamp/spdlog-populate-patch.rule
+D:/ProgramowanieGrafiki3D/cmake-build-debug/_deps/spdlog-subbuild/spdlog-populate-prefix/src/spdlog-populate-stamp/spdlog-populate-test.rule
+D:/ProgramowanieGrafiki3D/cmake-build-debug/_deps/spdlog-subbuild/spdlog-populate-prefix/src/spdlog-populate-stamp/spdlog-populate-update.rule

@@ -1,0 +1,14 @@
+# Target labels
+ glm-populate
+# Source files and their labels
+D:/ProgramowanieGrafiki3D/cmake-build-debug/_deps/glm-subbuild/CMakeFiles/glm-populate
+D:/ProgramowanieGrafiki3D/cmake-build-debug/_deps/glm-subbuild/CMakeFiles/glm-populate.rule
+D:/ProgramowanieGrafiki3D/cmake-build-debug/_deps/glm-subbuild/CMakeFiles/glm-populate-complete.rule
+D:/ProgramowanieGrafiki3D/cmake-build-debug/_deps/glm-subbuild/glm-populate-prefix/src/glm-populate-stamp/glm-populate-build.rule
+D:/ProgramowanieGrafiki3D/cmake-build-debug/_deps/glm-subbuild/glm-populate-prefix/src/glm-populate-stamp/glm-populate-configure.rule
+D:/ProgramowanieGrafiki3D/cmake-build-debug/_deps/glm-subbuild/glm-populate-prefix/src/glm-populate-stamp/glm-populate-download.rule
+D:/ProgramowanieGrafiki3D/cmake-build-debug/_deps/glm-subbuild/glm-populate-prefix/src/glm-populate-stamp/glm-populate-install.rule
+D:/ProgramowanieGrafiki3D/cmake-build-debug/_deps/glm-subbuild/glm-populate-prefix/src/glm-populate-stamp/glm-populate-mkdir.rule
+D:/ProgramowanieGrafiki3D/cmake-build-debug/_deps/glm-subbuild/glm-populate-prefix/src/glm-populate-stamp/glm-populate-patch.rule
+D:/ProgramowanieGrafiki3D/cmake-build-debug/_deps/glm-subbuild/glm-populate-prefix/src/glm-populate-stamp/glm-populate-test.rule
+D:/ProgramowanieGrafiki3D/cmake-build-debug/_deps/glm-subbuild/glm-populate-prefix/src/glm-populate-stamp/glm-populate-update.rule
