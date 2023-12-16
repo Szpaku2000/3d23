@@ -30,17 +30,10 @@ void SimpleShapeApplication::init() {
             -0.5f, 0.0f , 0.0f, 0.0f, 1.0f, 0.0f,
             -0.5f, -0.5f, 0.0f, 0.0f, 1.0f, 0.0f,
             0.5f , 0.0f , 0.0f, 0.0f, 1.0f, 0.0f,
-            0.5f , 0.0f , 0.0f, 0.0f, 1.0f, 0.0f,
             0.5f , -0.5f, 0.0f, 0.0f, 1.0f, 0.0f,
-            -0.5f, -0.5f, 0.0f, 0.0f, 1.0f, 0.0f,};
+            };
 
-    std::vector<GLushort> indexes = {0,1,2,3,4,5,6,7,8};
-
-    GLuint v_buffer_handle_1;
-    glGenBuffers(1, &v_buffer_handle_1);
-    OGL_CALL(glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, v_buffer_handle_1));
-    glBufferData(GL_ELEMENT_ARRAY_BUFFER, indexes.size() * sizeof(GLfloat), indexes.data(), GL_STATIC_DRAW);
-    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, 0);
+    std::vector<GLushort> indexes = {0,1,2,3,4,5,5,6,4};
 
     // Generating the buffer and loading the vertex data into it.
     GLuint v_buffer_handle;
@@ -49,12 +42,18 @@ void SimpleShapeApplication::init() {
     glBufferData(GL_ARRAY_BUFFER, vertices.size() * sizeof(GLfloat), vertices.data(), GL_STATIC_DRAW);
     glBindBuffer(GL_ARRAY_BUFFER, 0);
 
+    GLuint v_buffer_handle_indexes;
+    glGenBuffers(1, &v_buffer_handle_indexes);
+    OGL_CALL(glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, v_buffer_handle_indexes));
+    glBufferData(GL_ELEMENT_ARRAY_BUFFER, indexes.size() * sizeof(GLfloat), indexes.data(), GL_STATIC_DRAW);
+    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, 0);
+
     // This setups a Vertex Array Object (VAO) that  encapsulates
     // the state of all vertex buffers needed for rendering
     glGenVertexArrays(1, &vao_);
     glBindVertexArray(vao_);
     glBindBuffer(GL_ARRAY_BUFFER, v_buffer_handle);
-    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, v_buffer_handle_1); //FIXME
+    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, v_buffer_handle_indexes);
 
     // This indicates that the data for attribute 0 should be read from a vertex buffer.
     glEnableVertexAttribArray(0);
@@ -84,7 +83,6 @@ void SimpleShapeApplication::init() {
 void SimpleShapeApplication::frame() {
     // Binding the VAO will setup all the required vertex buffers.
     glBindVertexArray(vao_);
-//    glDrawArrays(GL_TRIANGLES, 0, 9);
-    glDrawElements(GL_TRIANGLES, 5, GL_UNSIGNED_SHORT, );   //FIXME i think loading is not working
+    glDrawElements(GL_TRIANGLES, 9, GL_UNSIGNED_SHORT, reinterpret_cast<GLvoid*>(0));
     glBindVertexArray(0);
 }

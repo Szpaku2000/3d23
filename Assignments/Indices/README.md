@@ -15,3 +15,5 @@ To ćwiczenie ma za zadanie zaznajomienie Państwa z działaniem bufora indeksó
 1. Jeśli nasz domek się wyświetlił, to proszę usunąć powtarzające się wierzchołki z bufora wierzchołków i odpowiednie zmodyfikowanie bufora indeksów tak, aby na ekranie dalej pokazywał się __ten sam__ domek. 
 
 1. Ile bajtów oszczędziliśmy ? Ile więcej bajtów moglibyśmy jeszcze oszczędzić ? Odpowiedź proszę zapisać w pliku README.md w folderze z zadaniem. 
+
+Oszczędzamy 48 bajtów (12 floatów po 4 bajty), potencjalnie najmniejsza liczba wymaganych wierzchołków to 5, czyli można oszczędzić jeszcze kolejne 48 bajtów przy odpowiedniej manipulacji kolorami. 
