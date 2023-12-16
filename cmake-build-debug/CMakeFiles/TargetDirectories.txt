@@ -88,3 +88,10 @@ D:/ProgramowanieGrafiki3D/cmake-build-debug/src/Assignments/Colors/CMakeFiles/li
 D:/ProgramowanieGrafiki3D/cmake-build-debug/src/Assignments/Colors/CMakeFiles/install.dir
 D:/ProgramowanieGrafiki3D/cmake-build-debug/src/Assignments/Colors/CMakeFiles/install/local.dir
 D:/ProgramowanieGrafiki3D/cmake-build-debug/src/Assignments/Colors/CMakeFiles/install/strip.dir
+D:/ProgramowanieGrafiki3D/cmake-build-debug/src/Assignments/Indices/CMakeFiles/Indices.dir
+D:/ProgramowanieGrafiki3D/cmake-build-debug/src/Assignments/Indices/CMakeFiles/edit_cache.dir
+D:/ProgramowanieGrafiki3D/cmake-build-debug/src/Assignments/Indices/CMakeFiles/rebuild_cache.dir
+D:/ProgramowanieGrafiki3D/cmake-build-debug/src/Assignments/Indices/CMakeFiles/list_install_components.dir
+D:/ProgramowanieGrafiki3D/cmake-build-debug/src/Assignments/Indices/CMakeFiles/install.dir
+D:/ProgramowanieGrafiki3D/cmake-build-debug/src/Assignments/Indices/CMakeFiles/install/local.dir
+D:/ProgramowanieGrafiki3D/cmake-build-debug/src/Assignments/Indices/CMakeFiles/install/strip.dir
