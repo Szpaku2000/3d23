@@ -393,6 +393,15 @@ GLFW_SOURCE_DIR:STATIC=D:/ProgramowanieGrafiki3D/cmake-build-debug/_deps/glfw-sr
 //Force use of high-performance GPU on hybrid systems
 GLFW_USE_HYBRID_HPG:BOOL=OFF
 
+//Generate the install target
+GLM_BUILD_INSTALL:BOOL=OFF
+
+//Build dynamic/static library
+GLM_BUILD_LIBRARY:BOOL=ON
+
+//Build the test programs
+GLM_BUILD_TESTS:BOOL=OFF
+
 //Value Computed by CMake
 Graphics3DCode_BINARY_DIR:STATIC=D:/ProgramowanieGrafiki3D/cmake-build-debug
 
@@ -525,6 +534,15 @@ Triangle_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
 Triangle_SOURCE_DIR:STATIC=D:/ProgramowanieGrafiki3D/src/Assignments/Triangle
+
+//Value Computed by CMake
+Uniforms_BINARY_DIR:STATIC=D:/ProgramowanieGrafiki3D/cmake-build-debug/src/Assignments/Uniforms
+
+//Value Computed by CMake
+Uniforms_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+Uniforms_SOURCE_DIR:STATIC=D:/ProgramowanieGrafiki3D/src/Assignments/Uniforms
 
 //Value Computed by CMake
 XeEngine_BINARY_DIR:STATIC=D:/ProgramowanieGrafiki3D/cmake-build-debug/src/XeEngine
@@ -699,7 +717,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=14
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=15
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

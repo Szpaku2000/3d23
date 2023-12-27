@@ -26,6 +26,7 @@ D:/ProgramowanieGrafiki3D/cmake-build-debug/_deps/glm-build/CMakeFiles/list_inst
 D:/ProgramowanieGrafiki3D/cmake-build-debug/_deps/glm-build/CMakeFiles/install.dir
 D:/ProgramowanieGrafiki3D/cmake-build-debug/_deps/glm-build/CMakeFiles/install/local.dir
 D:/ProgramowanieGrafiki3D/cmake-build-debug/_deps/glm-build/CMakeFiles/install/strip.dir
+D:/ProgramowanieGrafiki3D/cmake-build-debug/_deps/glm-build/glm/CMakeFiles/glm.dir
 D:/ProgramowanieGrafiki3D/cmake-build-debug/_deps/glm-build/glm/CMakeFiles/edit_cache.dir
 D:/ProgramowanieGrafiki3D/cmake-build-debug/_deps/glm-build/glm/CMakeFiles/rebuild_cache.dir
 D:/ProgramowanieGrafiki3D/cmake-build-debug/_deps/glm-build/glm/CMakeFiles/list_install_components.dir
@@ -95,3 +96,10 @@ D:/ProgramowanieGrafiki3D/cmake-build-debug/src/Assignments/Indices/CMakeFiles/l
 D:/ProgramowanieGrafiki3D/cmake-build-debug/src/Assignments/Indices/CMakeFiles/install.dir
 D:/ProgramowanieGrafiki3D/cmake-build-debug/src/Assignments/Indices/CMakeFiles/install/local.dir
 D:/ProgramowanieGrafiki3D/cmake-build-debug/src/Assignments/Indices/CMakeFiles/install/strip.dir
+D:/ProgramowanieGrafiki3D/cmake-build-debug/src/Assignments/Uniforms/CMakeFiles/Uniforms.dir
+D:/ProgramowanieGrafiki3D/cmake-build-debug/src/Assignments/Uniforms/CMakeFiles/edit_cache.dir
+D:/ProgramowanieGrafiki3D/cmake-build-debug/src/Assignments/Uniforms/CMakeFiles/rebuild_cache.dir
+D:/ProgramowanieGrafiki3D/cmake-build-debug/src/Assignments/Uniforms/CMakeFiles/list_install_components.dir
+D:/ProgramowanieGrafiki3D/cmake-build-debug/src/Assignments/Uniforms/CMakeFiles/install.dir
+D:/ProgramowanieGrafiki3D/cmake-build-debug/src/Assignments/Uniforms/CMakeFiles/install/local.dir
+D:/ProgramowanieGrafiki3D/cmake-build-debug/src/Assignments/Uniforms/CMakeFiles/install/strip.dir
