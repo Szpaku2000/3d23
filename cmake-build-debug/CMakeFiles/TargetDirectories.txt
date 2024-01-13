@@ -103,3 +103,17 @@ D:/ProgramowanieGrafiki3D/cmake-build-debug/src/Assignments/Uniforms/CMakeFiles/
 D:/ProgramowanieGrafiki3D/cmake-build-debug/src/Assignments/Uniforms/CMakeFiles/install.dir
 D:/ProgramowanieGrafiki3D/cmake-build-debug/src/Assignments/Uniforms/CMakeFiles/install/local.dir
 D:/ProgramowanieGrafiki3D/cmake-build-debug/src/Assignments/Uniforms/CMakeFiles/install/strip.dir
+D:/ProgramowanieGrafiki3D/cmake-build-debug/src/Assignments/PVM/CMakeFiles/PVM.dir
+D:/ProgramowanieGrafiki3D/cmake-build-debug/src/Assignments/PVM/CMakeFiles/edit_cache.dir
+D:/ProgramowanieGrafiki3D/cmake-build-debug/src/Assignments/PVM/CMakeFiles/rebuild_cache.dir
+D:/ProgramowanieGrafiki3D/cmake-build-debug/src/Assignments/PVM/CMakeFiles/list_install_components.dir
+D:/ProgramowanieGrafiki3D/cmake-build-debug/src/Assignments/PVM/CMakeFiles/install.dir
+D:/ProgramowanieGrafiki3D/cmake-build-debug/src/Assignments/PVM/CMakeFiles/install/local.dir
+D:/ProgramowanieGrafiki3D/cmake-build-debug/src/Assignments/PVM/CMakeFiles/install/strip.dir
+D:/ProgramowanieGrafiki3D/cmake-build-debug/src/Assignments/Pyramid/CMakeFiles/Pyramid.dir
+D:/ProgramowanieGrafiki3D/cmake-build-debug/src/Assignments/Pyramid/CMakeFiles/edit_cache.dir
+D:/ProgramowanieGrafiki3D/cmake-build-debug/src/Assignments/Pyramid/CMakeFiles/rebuild_cache.dir
+D:/ProgramowanieGrafiki3D/cmake-build-debug/src/Assignments/Pyramid/CMakeFiles/list_install_components.dir
+D:/ProgramowanieGrafiki3D/cmake-build-debug/src/Assignments/Pyramid/CMakeFiles/install.dir
+D:/ProgramowanieGrafiki3D/cmake-build-debug/src/Assignments/Pyramid/CMakeFiles/install/local.dir
+D:/ProgramowanieGrafiki3D/cmake-build-debug/src/Assignments/Pyramid/CMakeFiles/install/strip.dir
