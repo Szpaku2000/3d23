@@ -1,9 +1,8 @@
 "D:\Programy\JetBrains\CLion 2023.2.2\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=D:/Programy/JetBrains/CLion 2023.2.2/bin/ninja/win/x64/ninja.exe" -G Ninja -S D:\ProgramowanieGrafiki3D -B D:\ProgramowanieGrafiki3D\cmake-build-debug
 -- Including Win32 support
 -- GLM: Version 0.9.9.9
--- Build spdlog: 1.12.0
+-- Build spdlog: 1.13.0
 -- Build type: Debug
-Warning: directory D:/ProgramowanieGrafiki3D/src/Assignments/Resizing does not exists.
 Warning: directory D:/ProgramowanieGrafiki3D/src/Assignments/Zoom does not exists.
 Warning: directory D:/ProgramowanieGrafiki3D/src/Assignments/CameraMovement does not exists.
 Warning: directory D:/ProgramowanieGrafiki3D/src/Assignments/Meshes does not exists.
@@ -15,6 +14,6 @@ Warning: directory D:/ProgramowanieGrafiki3D/src/Assignments/Phong does not exis
 Warning: directory D:/ProgramowanieGrafiki3D/src/Assignments/PBR does not exists.
 Warning: directory D:/ProgramowanieGrafiki3D/src/Assignments/MultipleLights does not exists.
 Warning: directory D:/ProgramowanieGrafiki3D/src/Assignments/NormalMaps does not exists.
--- Configuring done (22.5s)
+-- Configuring done (17.1s)
 -- Generating done (0.1s)
 -- Build files have been written to: D:/ProgramowanieGrafiki3D/cmake-build-debug
