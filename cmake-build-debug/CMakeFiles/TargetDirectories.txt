@@ -124,3 +124,10 @@ D:/ProgramowanieGrafiki3D/cmake-build-debug/src/Assignments/Resizing/CMakeFiles/
 D:/ProgramowanieGrafiki3D/cmake-build-debug/src/Assignments/Resizing/CMakeFiles/install.dir
 D:/ProgramowanieGrafiki3D/cmake-build-debug/src/Assignments/Resizing/CMakeFiles/install/local.dir
 D:/ProgramowanieGrafiki3D/cmake-build-debug/src/Assignments/Resizing/CMakeFiles/install/strip.dir
+D:/ProgramowanieGrafiki3D/cmake-build-debug/src/Assignments/Zoom/CMakeFiles/Zoom.dir
+D:/ProgramowanieGrafiki3D/cmake-build-debug/src/Assignments/Zoom/CMakeFiles/edit_cache.dir
+D:/ProgramowanieGrafiki3D/cmake-build-debug/src/Assignments/Zoom/CMakeFiles/rebuild_cache.dir
+D:/ProgramowanieGrafiki3D/cmake-build-debug/src/Assignments/Zoom/CMakeFiles/list_install_components.dir
+D:/ProgramowanieGrafiki3D/cmake-build-debug/src/Assignments/Zoom/CMakeFiles/install.dir
+D:/ProgramowanieGrafiki3D/cmake-build-debug/src/Assignments/Zoom/CMakeFiles/install/local.dir
+D:/ProgramowanieGrafiki3D/cmake-build-debug/src/Assignments/Zoom/CMakeFiles/install/strip.dir
