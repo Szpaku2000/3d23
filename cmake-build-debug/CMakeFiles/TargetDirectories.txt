@@ -131,3 +131,10 @@ D:/ProgramowanieGrafiki3D/cmake-build-debug/src/Assignments/Zoom/CMakeFiles/list
 D:/ProgramowanieGrafiki3D/cmake-build-debug/src/Assignments/Zoom/CMakeFiles/install.dir
 D:/ProgramowanieGrafiki3D/cmake-build-debug/src/Assignments/Zoom/CMakeFiles/install/local.dir
 D:/ProgramowanieGrafiki3D/cmake-build-debug/src/Assignments/Zoom/CMakeFiles/install/strip.dir
+D:/ProgramowanieGrafiki3D/cmake-build-debug/src/Assignments/CameraMovement/CMakeFiles/CameraMovement.dir
+D:/ProgramowanieGrafiki3D/cmake-build-debug/src/Assignments/CameraMovement/CMakeFiles/edit_cache.dir
+D:/ProgramowanieGrafiki3D/cmake-build-debug/src/Assignments/CameraMovement/CMakeFiles/rebuild_cache.dir
+D:/ProgramowanieGrafiki3D/cmake-build-debug/src/Assignments/CameraMovement/CMakeFiles/list_install_components.dir
+D:/ProgramowanieGrafiki3D/cmake-build-debug/src/Assignments/CameraMovement/CMakeFiles/install.dir
+D:/ProgramowanieGrafiki3D/cmake-build-debug/src/Assignments/CameraMovement/CMakeFiles/install/local.dir
+D:/ProgramowanieGrafiki3D/cmake-build-debug/src/Assignments/CameraMovement/CMakeFiles/install/strip.dir
