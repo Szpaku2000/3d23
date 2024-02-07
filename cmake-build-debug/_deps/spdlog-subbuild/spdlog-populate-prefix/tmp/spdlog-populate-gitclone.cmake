@@ -25,7 +25,7 @@ set(error_code 1)
 set(number_of_tries 0)
 while(error_code AND number_of_tries LESS 3)
   execute_process(
-    COMMAND "C:/Program Files/Git/cmd/git.exe" 
+    COMMAND "C:/Program Files/Git/cmd/git.exe"
             clone --no-checkout --config "advice.detachedHead=false" "https://github.com/gabime/spdlog.git" "spdlog-src"
     WORKING_DIRECTORY "D:/ProgramowanieGrafiki3D/cmake-build-debug/_deps"
     RESULT_VARIABLE error_code
@@ -40,7 +40,7 @@ if(error_code)
 endif()
 
 execute_process(
-  COMMAND "C:/Program Files/Git/cmd/git.exe" 
+  COMMAND "C:/Program Files/Git/cmd/git.exe"
           checkout "v1.x" --
   WORKING_DIRECTORY "D:/ProgramowanieGrafiki3D/cmake-build-debug/_deps/spdlog-src"
   RESULT_VARIABLE error_code
