@@ -145,3 +145,10 @@ D:/ProgramowanieGrafiki3D/cmake-build-debug/src/Assignments/MeshesMaterials/CMak
 D:/ProgramowanieGrafiki3D/cmake-build-debug/src/Assignments/MeshesMaterials/CMakeFiles/install.dir
 D:/ProgramowanieGrafiki3D/cmake-build-debug/src/Assignments/MeshesMaterials/CMakeFiles/install/local.dir
 D:/ProgramowanieGrafiki3D/cmake-build-debug/src/Assignments/MeshesMaterials/CMakeFiles/install/strip.dir
+D:/ProgramowanieGrafiki3D/cmake-build-debug/src/Assignments/Textures/CMakeFiles/Textures.dir
+D:/ProgramowanieGrafiki3D/cmake-build-debug/src/Assignments/Textures/CMakeFiles/edit_cache.dir
+D:/ProgramowanieGrafiki3D/cmake-build-debug/src/Assignments/Textures/CMakeFiles/rebuild_cache.dir
+D:/ProgramowanieGrafiki3D/cmake-build-debug/src/Assignments/Textures/CMakeFiles/list_install_components.dir
+D:/ProgramowanieGrafiki3D/cmake-build-debug/src/Assignments/Textures/CMakeFiles/install.dir
+D:/ProgramowanieGrafiki3D/cmake-build-debug/src/Assignments/Textures/CMakeFiles/install/local.dir
+D:/ProgramowanieGrafiki3D/cmake-build-debug/src/Assignments/Textures/CMakeFiles/install/strip.dir

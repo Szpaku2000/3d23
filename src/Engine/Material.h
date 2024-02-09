@@ -11,6 +11,8 @@
 
 namespace xe {
 
+    GLuint create_texture(const std::string &name);
+
     class Material {
     public:
         virtual void bind() = 0;
@@ -28,12 +30,23 @@ namespace xe {
 
         static GLuint program() { return shader_; }
 
+        GLuint get_texture() const;
+
+        GLuint get_texture_unit() const;
+
+        void set_texture_unit(GLuint textureUnit);
+
+        void set_texture(GLuint texture);
+
     private:
         static GLuint shader_;
         static GLuint color_uniform_buffer_;
 
         glm::vec4 color_;
 
+        static GLint uniform_map_Kd_location_;
+        GLuint texture_;
+        GLuint texture_unit_;
     };
 
 

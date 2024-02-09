@@ -623,6 +623,15 @@ SPDLOG_WCHAR_FILENAMES:BOOL=OFF
 SPDLOG_WCHAR_SUPPORT:BOOL=OFF
 
 //Value Computed by CMake
+Textures_BINARY_DIR:STATIC=D:/ProgramowanieGrafiki3D/cmake-build-debug/src/Assignments/Textures
+
+//Value Computed by CMake
+Textures_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+Textures_SOURCE_DIR:STATIC=D:/ProgramowanieGrafiki3D/src/Assignments/Textures
+
+//Value Computed by CMake
 Triangle_BINARY_DIR:STATIC=D:/ProgramowanieGrafiki3D/cmake-build-debug/src/Assignments/Triangle
 
 //Value Computed by CMake
@@ -822,7 +831,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=21
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=22
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
