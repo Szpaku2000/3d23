@@ -36,8 +36,8 @@ namespace xe {
 
 
         auto program = xe::utils::create_program(
-                {{GL_VERTEX_SHADER,"D:\\ProgramowanieGrafiki3D/src/Assignments/Textures/shaders/base_vs.glsl"},
-                 {GL_FRAGMENT_SHADER, "D:\\ProgramowanieGrafiki3D/src/Assignments/Textures/shaders/base_fs.glsl"}});
+                {{GL_VERTEX_SHADER,   std::string(PROJECT_DIR) + "/shaders/color_vs.glsl"},
+                 {GL_FRAGMENT_SHADER, std::string(PROJECT_DIR) + "/shaders/color_fs.glsl"}});
         if (!program) {
             std::cerr << "Invalid program" << std::endl;
             exit(-1);
@@ -98,10 +98,10 @@ namespace xe {
         GLint width, height, channels;
         auto img = stbi_load(name.c_str(), &width, &height, &channels, 0);
         if (!img) {
-            std::cerr << "Could not read image from file `{}'" << name;
+            std::cerr << "Could not read image from file" << name;
             return 0;
         }
-        GLenum format;
+        GLenum format = GL_RGB;
         if (channels == 3)
             format = GL_RGB;
         else if (channels == 4) {

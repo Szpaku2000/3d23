@@ -45,7 +45,7 @@ xe::Mesh::Mesh() {
 
 void xe::Mesh::allocate_index_buffer(size_t size, GLenum hint) {
     glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, i_buffer_);
-    glBufferData(GL_ELEMENT_ARRAY_BUFFER, size, nullptr, GL_STATIC_DRAW);
+    glBufferData(GL_ELEMENT_ARRAY_BUFFER, size, nullptr, hint);
     glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, 0u);
 }
 
@@ -63,8 +63,7 @@ void xe::Mesh::allocate_vertex_buffer(size_t size, GLenum hint) {
     glBindBuffer(GL_ARRAY_BUFFER, 0u);
 }
 
-void xe::Mesh::
-load_vertices(size_t offset, size_t size, void *data) {
+void xe::Mesh::load_vertices(size_t offset, size_t size, void *data) {
     glBindBuffer(GL_ARRAY_BUFFER, v_buffer_);
     glBufferSubData(GL_ARRAY_BUFFER, offset, size, data);
     glBindBuffer(GL_ARRAY_BUFFER, 0u);

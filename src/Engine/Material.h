@@ -22,7 +22,10 @@ namespace xe {
 
     class ColorMaterial : public Material {
     public:
-        ColorMaterial(const glm::vec4 color) : color_(color) {}
+        ColorMaterial(const glm::vec4 color) : color_(color), texture_(0), texture_unit_(0) {}
+
+        ColorMaterial(const glm::vec4 color, GLuint texture, GLuint texture_unit) :
+            color_(color), texture_(texture), texture_unit_(texture_unit) {}
 
         void bind();
 
@@ -42,7 +45,7 @@ namespace xe {
         static GLuint shader_;
         static GLuint color_uniform_buffer_;
 
-        glm::vec4 color_;
+        glm::vec4 color_ = glm::vec4(1.0, 0.0, 0.0, 1.0);
 
         static GLint uniform_map_Kd_location_;
         GLuint texture_;
