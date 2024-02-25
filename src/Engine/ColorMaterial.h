@@ -1,19 +1,21 @@
 //
-// Created by Piotr Białas on 20/11/2021.
+// Created by kasz2 on 24.02.2024.
 //
 
-#pragma once
+#ifndef GRAPHICS3DCODE_COLORMATERIAL_H
+#define GRAPHICS3DCODE_COLORMATERIAL_H
 
+
+#include "glm/vec4.hpp"
+#include "glad/gl.h"
 #include "Material.h"
 
-#include <string>
-
 namespace xe {
-    class PhongMaterial : public Material {
+    class ColorMaterial : public Material {
     public:
-        PhongMaterial(const glm::vec4 color) : color_(color), texture_(0), texture_unit_(0) {}
+        ColorMaterial(const glm::vec4 color) : color_(color), texture_(0), texture_unit_(0) {}
 
-        PhongMaterial(const glm::vec4 color, GLuint texture, GLuint texture_unit) :
+        ColorMaterial(const glm::vec4 color, GLuint texture, GLuint texture_unit) :
                 color_(color), texture_(texture), texture_unit_(texture_unit) {}
 
         void bind();
@@ -40,9 +42,6 @@ namespace xe {
         GLuint texture_;
         GLuint texture_unit_;
     };
-
 }
 
-
-
-
+#endif //GRAPHICS3DCODE_COLORMATERIAL_H

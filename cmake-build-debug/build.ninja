@@ -1216,14 +1216,6 @@ build src/Engine/CMakeFiles/engine.dir/Mesh.cpp.obj: CXX_COMPILER__engine_unscan
   OBJECT_DIR = src\Engine\CMakeFiles\engine.dir
   OBJECT_FILE_DIR = src\Engine\CMakeFiles\engine.dir
 
-build src/Engine/CMakeFiles/engine.dir/Material.cpp.obj: CXX_COMPILER__engine_unscanned_Debug D$:/ProgramowanieGrafiki3D/src/Engine/Material.cpp || cmake_object_order_depends_target_engine
-  DEFINES = -DMAJOR=4 -DMINOR=6 -DPROJECT_DIR=\"D:/ProgramowanieGrafiki3D/src/Engine\" -DPROJECT_NAME=\"Engine\" -DROOT_DIR=\"D:/ProgramowanieGrafiki3D\" -DXE_DEBUG
-  DEP_FILE = src\Engine\CMakeFiles\engine.dir\Material.cpp.obj.d
-  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
-  INCLUDES = -ID:/ProgramowanieGrafiki3D/src/3rdParty -ID:/ProgramowanieGrafiki3D/src -ID:/ProgramowanieGrafiki3D/src/3rdParty/glad/glad_4_6/glad/include -ID:/ProgramowanieGrafiki3D/cmake-build-debug/_deps/glfw-src/include -ID:/ProgramowanieGrafiki3D/cmake-build-debug/_deps/glm-src
-  OBJECT_DIR = src\Engine\CMakeFiles\engine.dir
-  OBJECT_FILE_DIR = src\Engine\CMakeFiles\engine.dir
-
 build src/Engine/CMakeFiles/engine.dir/mesh_loader.cpp.obj: CXX_COMPILER__engine_unscanned_Debug D$:/ProgramowanieGrafiki3D/src/Engine/mesh_loader.cpp || cmake_object_order_depends_target_engine
   DEFINES = -DMAJOR=4 -DMINOR=6 -DPROJECT_DIR=\"D:/ProgramowanieGrafiki3D/src/Engine\" -DPROJECT_NAME=\"Engine\" -DROOT_DIR=\"D:/ProgramowanieGrafiki3D\" -DXE_DEBUG
   DEP_FILE = src\Engine\CMakeFiles\engine.dir\mesh_loader.cpp.obj.d
@@ -1248,6 +1240,22 @@ build src/Engine/CMakeFiles/engine.dir/utils.cpp.obj: CXX_COMPILER__engine_unsca
   OBJECT_DIR = src\Engine\CMakeFiles\engine.dir
   OBJECT_FILE_DIR = src\Engine\CMakeFiles\engine.dir
 
+build src/Engine/CMakeFiles/engine.dir/ColorMaterial.cpp.obj: CXX_COMPILER__engine_unscanned_Debug D$:/ProgramowanieGrafiki3D/src/Engine/ColorMaterial.cpp || cmake_object_order_depends_target_engine
+  DEFINES = -DMAJOR=4 -DMINOR=6 -DPROJECT_DIR=\"D:/ProgramowanieGrafiki3D/src/Engine\" -DPROJECT_NAME=\"Engine\" -DROOT_DIR=\"D:/ProgramowanieGrafiki3D\" -DXE_DEBUG
+  DEP_FILE = src\Engine\CMakeFiles\engine.dir\ColorMaterial.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -ID:/ProgramowanieGrafiki3D/src/3rdParty -ID:/ProgramowanieGrafiki3D/src -ID:/ProgramowanieGrafiki3D/src/3rdParty/glad/glad_4_6/glad/include -ID:/ProgramowanieGrafiki3D/cmake-build-debug/_deps/glfw-src/include -ID:/ProgramowanieGrafiki3D/cmake-build-debug/_deps/glm-src
+  OBJECT_DIR = src\Engine\CMakeFiles\engine.dir
+  OBJECT_FILE_DIR = src\Engine\CMakeFiles\engine.dir
+
+build src/Engine/CMakeFiles/engine.dir/texture.cpp.obj: CXX_COMPILER__engine_unscanned_Debug D$:/ProgramowanieGrafiki3D/src/Engine/texture.cpp || cmake_object_order_depends_target_engine
+  DEFINES = -DMAJOR=4 -DMINOR=6 -DPROJECT_DIR=\"D:/ProgramowanieGrafiki3D/src/Engine\" -DPROJECT_NAME=\"Engine\" -DROOT_DIR=\"D:/ProgramowanieGrafiki3D\" -DXE_DEBUG
+  DEP_FILE = src\Engine\CMakeFiles\engine.dir\texture.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -ID:/ProgramowanieGrafiki3D/src/3rdParty -ID:/ProgramowanieGrafiki3D/src -ID:/ProgramowanieGrafiki3D/src/3rdParty/glad/glad_4_6/glad/include -ID:/ProgramowanieGrafiki3D/cmake-build-debug/_deps/glfw-src/include -ID:/ProgramowanieGrafiki3D/cmake-build-debug/_deps/glm-src
+  OBJECT_DIR = src\Engine\CMakeFiles\engine.dir
+  OBJECT_FILE_DIR = src\Engine\CMakeFiles\engine.dir
+
 
 # =============================================================================
 # Link build statements for STATIC_LIBRARY target engine
@@ -1256,7 +1264,7 @@ build src/Engine/CMakeFiles/engine.dir/utils.cpp.obj: CXX_COMPILER__engine_unsca
 #############################################
 # Link the static library src\Engine\libengine.a
 
-build src/Engine/libengine.a: CXX_STATIC_LIBRARY_LINKER__engine_Debug CMakeFiles/glad.dir/src/3rdParty/glad/glad_4_6/glad/src/gl.c.obj src/Engine/CMakeFiles/engine.dir/Mesh.cpp.obj src/Engine/CMakeFiles/engine.dir/Material.cpp.obj src/Engine/CMakeFiles/engine.dir/mesh_loader.cpp.obj src/Engine/CMakeFiles/engine.dir/PhongMaterial.cpp.obj src/Engine/CMakeFiles/engine.dir/utils.cpp.obj || _deps/glfw-build/src/libglfw3.a _deps/glm-build/glm/libglm.a _deps/spdlog-build/libspdlogd.a glad src/ObjectReader/libobjreader.a
+build src/Engine/libengine.a: CXX_STATIC_LIBRARY_LINKER__engine_Debug CMakeFiles/glad.dir/src/3rdParty/glad/glad_4_6/glad/src/gl.c.obj src/Engine/CMakeFiles/engine.dir/Mesh.cpp.obj src/Engine/CMakeFiles/engine.dir/mesh_loader.cpp.obj src/Engine/CMakeFiles/engine.dir/PhongMaterial.cpp.obj src/Engine/CMakeFiles/engine.dir/utils.cpp.obj src/Engine/CMakeFiles/engine.dir/ColorMaterial.cpp.obj src/Engine/CMakeFiles/engine.dir/texture.cpp.obj || _deps/glfw-build/src/libglfw3.a _deps/glm-build/glm/libglm.a _deps/spdlog-build/libspdlogd.a glad src/ObjectReader/libobjreader.a
   LANGUAGE_COMPILE_FLAGS = -g
   OBJECT_DIR = src\Engine\CMakeFiles\engine.dir
   POST_BUILD = cd .
@@ -2686,6 +2694,119 @@ build src/Assignments/Textures/CMakeFiles/install/strip.util: CUSTOM_COMMAND src
 build src/Assignments/Textures/install/strip: phony src/Assignments/Textures/CMakeFiles/install/strip.util
 
 # =============================================================================
+# Write statements declared in CMakeLists.txt:
+# D:/ProgramowanieGrafiki3D/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for EXECUTABLE target Phong
+
+
+#############################################
+# Order-only phony target for Phong
+
+build cmake_object_order_depends_target_Phong: phony || cmake_object_order_depends_target_application cmake_object_order_depends_target_engine cmake_object_order_depends_target_glad cmake_object_order_depends_target_glfw cmake_object_order_depends_target_glm cmake_object_order_depends_target_objreader cmake_object_order_depends_target_spdlog
+
+build src/Assignments/Phong/CMakeFiles/Phong.dir/main.cpp.obj: CXX_COMPILER__Phong_unscanned_Debug D$:/ProgramowanieGrafiki3D/src/Assignments/Phong/main.cpp || cmake_object_order_depends_target_Phong
+  DEFINES = -DMAJOR=4 -DMINOR=6 -DPROJECT_DIR=\"D:/ProgramowanieGrafiki3D/src/Assignments/Phong\" -DPROJECT_NAME=\"Phong\" -DROOT_DIR=\"D:/ProgramowanieGrafiki3D\" -DXE_DEBUG
+  DEP_FILE = src\Assignments\Phong\CMakeFiles\Phong.dir\main.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -ID:/ProgramowanieGrafiki3D/src/3rdParty -ID:/ProgramowanieGrafiki3D/src -ID:/ProgramowanieGrafiki3D/src/3rdParty/glad/glad_4_6/glad/include -ID:/ProgramowanieGrafiki3D/cmake-build-debug/_deps/glfw-src/include -ID:/ProgramowanieGrafiki3D/cmake-build-debug/_deps/glm-src
+  OBJECT_DIR = src\Assignments\Phong\CMakeFiles\Phong.dir
+  OBJECT_FILE_DIR = src\Assignments\Phong\CMakeFiles\Phong.dir
+
+build src/Assignments/Phong/CMakeFiles/Phong.dir/app.cpp.obj: CXX_COMPILER__Phong_unscanned_Debug D$:/ProgramowanieGrafiki3D/src/Assignments/Phong/app.cpp || cmake_object_order_depends_target_Phong
+  DEFINES = -DMAJOR=4 -DMINOR=6 -DPROJECT_DIR=\"D:/ProgramowanieGrafiki3D/src/Assignments/Phong\" -DPROJECT_NAME=\"Phong\" -DROOT_DIR=\"D:/ProgramowanieGrafiki3D\" -DXE_DEBUG
+  DEP_FILE = src\Assignments\Phong\CMakeFiles\Phong.dir\app.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -ID:/ProgramowanieGrafiki3D/src/3rdParty -ID:/ProgramowanieGrafiki3D/src -ID:/ProgramowanieGrafiki3D/src/3rdParty/glad/glad_4_6/glad/include -ID:/ProgramowanieGrafiki3D/cmake-build-debug/_deps/glfw-src/include -ID:/ProgramowanieGrafiki3D/cmake-build-debug/_deps/glm-src
+  OBJECT_DIR = src\Assignments\Phong\CMakeFiles\Phong.dir
+  OBJECT_FILE_DIR = src\Assignments\Phong\CMakeFiles\Phong.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Phong
+
+
+#############################################
+# Link the executable src\Assignments\Phong\Phong.exe
+
+build src/Assignments/Phong/Phong.exe: CXX_EXECUTABLE_LINKER__Phong_Debug CMakeFiles/glad.dir/src/3rdParty/glad/glad_4_6/glad/src/gl.c.obj src/Assignments/Phong/CMakeFiles/Phong.dir/main.cpp.obj src/Assignments/Phong/CMakeFiles/Phong.dir/app.cpp.obj | _deps/glfw-build/src/libglfw3.a _deps/glm-build/glm/libglm.a src/Application/libapplication.a src/Engine/libengine.a src/ObjectReader/libobjreader.a _deps/glfw-build/src/libglfw3.a _deps/glm-build/glm/libglm.a _deps/spdlog-build/libspdlogd.a || _deps/glfw-build/src/libglfw3.a _deps/glm-build/glm/libglm.a _deps/spdlog-build/libspdlogd.a glad src/Application/libapplication.a src/Engine/libengine.a src/ObjectReader/libobjreader.a
+  FLAGS = -g
+  LINK_LIBRARIES = -lopengl32  _deps/glfw-build/src/libglfw3.a  _deps/glm-build/glm/libglm.a  src/Application/libapplication.a  src/Engine/libengine.a  src/ObjectReader/libobjreader.a  -lopengl32  _deps/glfw-build/src/libglfw3.a  _deps/glm-build/glm/libglm.a  _deps/spdlog-build/libspdlogd.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = src\Assignments\Phong\CMakeFiles\Phong.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = src\Assignments\Phong\Phong.exe
+  TARGET_IMPLIB = src\Assignments\Phong\libPhong.dll.a
+  TARGET_PDB = Phong.exe.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build src/Assignments/Phong/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D D:\ProgramowanieGrafiki3D\cmake-build-debug\src\Assignments\Phong && "D:\Programy\JetBrains\CLion 2023.2.2\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build src/Assignments/Phong/edit_cache: phony src/Assignments/Phong/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build src/Assignments/Phong/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D D:\ProgramowanieGrafiki3D\cmake-build-debug\src\Assignments\Phong && "D:\Programy\JetBrains\CLion 2023.2.2\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -SD:\ProgramowanieGrafiki3D -BD:\ProgramowanieGrafiki3D\cmake-build-debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build src/Assignments/Phong/rebuild_cache: phony src/Assignments/Phong/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build src/Assignments/Phong/list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build src/Assignments/Phong/CMakeFiles/install.util: CUSTOM_COMMAND src/Assignments/Phong/all
+  COMMAND = cmd.exe /C "cd /D D:\ProgramowanieGrafiki3D\cmake-build-debug\src\Assignments\Phong && "D:\Programy\JetBrains\CLion 2023.2.2\bin\cmake\win\x64\bin\cmake.exe" -P cmake_install.cmake"
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build src/Assignments/Phong/install: phony src/Assignments/Phong/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build src/Assignments/Phong/CMakeFiles/install/local.util: CUSTOM_COMMAND src/Assignments/Phong/all
+  COMMAND = cmd.exe /C "cd /D D:\ProgramowanieGrafiki3D\cmake-build-debug\src\Assignments\Phong && "D:\Programy\JetBrains\CLion 2023.2.2\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build src/Assignments/Phong/install/local: phony src/Assignments/Phong/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build src/Assignments/Phong/CMakeFiles/install/strip.util: CUSTOM_COMMAND src/Assignments/Phong/all
+  COMMAND = cmd.exe /C "cd /D D:\ProgramowanieGrafiki3D\cmake-build-debug\src\Assignments\Phong && "D:\Programy\JetBrains\CLion 2023.2.2\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build src/Assignments/Phong/install/strip: phony src/Assignments/Phong/CMakeFiles/install/strip.util
+
+# =============================================================================
 # Target aliases.
 
 build CameraMovement: phony src/Assignments/CameraMovement/CameraMovement.exe
@@ -2711,6 +2832,10 @@ build MeshesMaterials.exe: phony src/Assignments/MeshesMaterials/MeshesMaterials
 build PVM: phony src/Assignments/PVM/PVM.exe
 
 build PVM.exe: phony src/Assignments/PVM/PVM.exe
+
+build Phong: phony src/Assignments/Phong/Phong.exe
+
+build Phong.exe: phony src/Assignments/Phong/Phong.exe
 
 build Pyramid: phony src/Assignments/Pyramid/Pyramid.exe
 
@@ -2776,7 +2901,7 @@ build xe-engine: phony src/XeEngine/libxe-engine.a
 #############################################
 # Folder: D:/ProgramowanieGrafiki3D/cmake-build-debug
 
-build all: phony glad _deps/glfw-build/all _deps/glm-build/all _deps/spdlog-build/all src/Application/all src/ObjectReader/all src/XeEngine/all src/Engine/all src/Assignments/Triangle/all src/Assignments/House/all src/Assignments/Colors/all src/Assignments/Indices/all src/Assignments/Uniforms/all src/Assignments/PVM/all src/Assignments/Pyramid/all src/Assignments/Resizing/all src/Assignments/Zoom/all src/Assignments/CameraMovement/all src/Assignments/MeshesMaterials/all src/Assignments/Textures/all
+build all: phony glad _deps/glfw-build/all _deps/glm-build/all _deps/spdlog-build/all src/Application/all src/ObjectReader/all src/XeEngine/all src/Engine/all src/Assignments/Triangle/all src/Assignments/House/all src/Assignments/Colors/all src/Assignments/Indices/all src/Assignments/Uniforms/all src/Assignments/PVM/all src/Assignments/Pyramid/all src/Assignments/Resizing/all src/Assignments/Zoom/all src/Assignments/CameraMovement/all src/Assignments/MeshesMaterials/all src/Assignments/Textures/all src/Assignments/Phong/all
 
 # =============================================================================
 
@@ -2865,6 +2990,13 @@ build src/Assignments/PVM/all: phony src/Assignments/PVM/PVM.exe
 # =============================================================================
 
 #############################################
+# Folder: D:/ProgramowanieGrafiki3D/cmake-build-debug/src/Assignments/Phong
+
+build src/Assignments/Phong/all: phony src/Assignments/Phong/Phong.exe
+
+# =============================================================================
+
+#############################################
 # Folder: D:/ProgramowanieGrafiki3D/cmake-build-debug/src/Assignments/Pyramid
 
 build src/Assignments/Pyramid/all: phony src/Assignments/Pyramid/Pyramid.exe
@@ -2932,14 +3064,14 @@ build src/XeEngine/all: phony src/XeEngine/libxe-engine.a
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | CMakeCache.txt CMakeFiles/3.27.8/CMakeCCompiler.cmake CMakeFiles/3.27.8/CMakeCXXCompiler.cmake CMakeFiles/3.27.8/CMakeRCCompiler.cmake CMakeFiles/3.27.8/CMakeSystem.cmake D$:/ProgramowanieGrafiki3D/CMakeLists.txt D$:/ProgramowanieGrafiki3D/src/Application/CMakeLists.txt D$:/ProgramowanieGrafiki3D/src/Assignments/CameraMovement/CMakeLists.txt D$:/ProgramowanieGrafiki3D/src/Assignments/Colors/CMakeLists.txt D$:/ProgramowanieGrafiki3D/src/Assignments/House/CMakeLists.txt D$:/ProgramowanieGrafiki3D/src/Assignments/Indices/CMakeLists.txt D$:/ProgramowanieGrafiki3D/src/Assignments/MeshesMaterials/CMakeLists.txt D$:/ProgramowanieGrafiki3D/src/Assignments/PVM/CMakeLists.txt D$:/ProgramowanieGrafiki3D/src/Assignments/Pyramid/CMakeLists.txt D$:/ProgramowanieGrafiki3D/src/Assignments/Resizing/CMakeLists.txt D$:/ProgramowanieGrafiki3D/src/Assignments/Textures/CMakeLists.txt D$:/ProgramowanieGrafiki3D/src/Assignments/Triangle/CMakeLists.txt D$:/ProgramowanieGrafiki3D/src/Assignments/Uniforms/CMakeLists.txt D$:/ProgramowanieGrafiki3D/src/Assignments/Zoom/CMakeLists.txt D$:/ProgramowanieGrafiki3D/src/Engine/CMakeLists.txt D$:/ProgramowanieGrafiki3D/src/ObjectReader/CMakeLists.txt D$:/ProgramowanieGrafiki3D/src/XeEngine/CMakeLists.txt D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/BasicConfigVersion-SameMajorVersion.cmake.in D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCInformation.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCXXInformation.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCommonLanguageInclude.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeDependentOption.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeGenericSystem.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeInitializeConfigs.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeLanguageInformation.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakePackageConfigHelpers.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeRCInformation.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeSystemSpecificInformation.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeSystemSpecificInitialize.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CheckCSourceCompiles.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CheckIncludeFile.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CheckLibraryExists.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/CMakeCommonCompilerMacros.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU-C.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU-CXX.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/ExternalProject.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/ExternalProject/shared_internal_commands.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/FetchContent.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/FetchContent/CMakeLists.cmake.in D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/FindGit.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/FindOpenGL.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/FindPackageHandleStandardArgs.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/FindPackageMessage.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/FindThreads.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/GNUInstallDirs.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Internal/CheckSourceCompiles.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-C-ABI.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-C.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-CXX-ABI.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-CXX.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-Initialize.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-windres.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/WindowsPaths.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/WriteBasicConfigVersionFile.cmake _deps/glfw-src/CMakeLists.txt _deps/glfw-src/CMake/cmake_uninstall.cmake.in _deps/glfw-src/CMake/glfw3.pc.in _deps/glfw-src/CMake/glfw3Config.cmake.in _deps/glfw-src/src/CMakeLists.txt _deps/glm-src/CMakeLists.txt _deps/glm-src/glm/CMakeLists.txt _deps/spdlog-src/CMakeLists.txt _deps/spdlog-src/cmake/ide.cmake _deps/spdlog-src/cmake/utils.cmake
+build build.ninja: RERUN_CMAKE | CMakeCache.txt CMakeFiles/3.27.8/CMakeCCompiler.cmake CMakeFiles/3.27.8/CMakeCXXCompiler.cmake CMakeFiles/3.27.8/CMakeRCCompiler.cmake CMakeFiles/3.27.8/CMakeSystem.cmake D$:/ProgramowanieGrafiki3D/CMakeLists.txt D$:/ProgramowanieGrafiki3D/src/Application/CMakeLists.txt D$:/ProgramowanieGrafiki3D/src/Assignments/CameraMovement/CMakeLists.txt D$:/ProgramowanieGrafiki3D/src/Assignments/Colors/CMakeLists.txt D$:/ProgramowanieGrafiki3D/src/Assignments/House/CMakeLists.txt D$:/ProgramowanieGrafiki3D/src/Assignments/Indices/CMakeLists.txt D$:/ProgramowanieGrafiki3D/src/Assignments/MeshesMaterials/CMakeLists.txt D$:/ProgramowanieGrafiki3D/src/Assignments/PVM/CMakeLists.txt D$:/ProgramowanieGrafiki3D/src/Assignments/Phong/CMakeLists.txt D$:/ProgramowanieGrafiki3D/src/Assignments/Pyramid/CMakeLists.txt D$:/ProgramowanieGrafiki3D/src/Assignments/Resizing/CMakeLists.txt D$:/ProgramowanieGrafiki3D/src/Assignments/Textures/CMakeLists.txt D$:/ProgramowanieGrafiki3D/src/Assignments/Triangle/CMakeLists.txt D$:/ProgramowanieGrafiki3D/src/Assignments/Uniforms/CMakeLists.txt D$:/ProgramowanieGrafiki3D/src/Assignments/Zoom/CMakeLists.txt D$:/ProgramowanieGrafiki3D/src/Engine/CMakeLists.txt D$:/ProgramowanieGrafiki3D/src/ObjectReader/CMakeLists.txt D$:/ProgramowanieGrafiki3D/src/XeEngine/CMakeLists.txt D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/BasicConfigVersion-SameMajorVersion.cmake.in D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCInformation.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCXXInformation.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCommonLanguageInclude.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeDependentOption.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeGenericSystem.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeInitializeConfigs.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeLanguageInformation.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakePackageConfigHelpers.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeRCInformation.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeSystemSpecificInformation.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeSystemSpecificInitialize.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CheckCSourceCompiles.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CheckIncludeFile.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CheckLibraryExists.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/CMakeCommonCompilerMacros.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU-C.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU-CXX.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/ExternalProject.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/ExternalProject/shared_internal_commands.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/FetchContent.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/FetchContent/CMakeLists.cmake.in D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/FindGit.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/FindOpenGL.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/FindPackageHandleStandardArgs.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/FindPackageMessage.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/FindThreads.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/GNUInstallDirs.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Internal/CheckSourceCompiles.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-C-ABI.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-C.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-CXX-ABI.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-CXX.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-Initialize.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-windres.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/WindowsPaths.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/WriteBasicConfigVersionFile.cmake _deps/glfw-src/CMakeLists.txt _deps/glfw-src/CMake/cmake_uninstall.cmake.in _deps/glfw-src/CMake/glfw3.pc.in _deps/glfw-src/CMake/glfw3Config.cmake.in _deps/glfw-src/src/CMakeLists.txt _deps/glm-src/CMakeLists.txt _deps/glm-src/glm/CMakeLists.txt _deps/spdlog-src/CMakeLists.txt _deps/spdlog-src/cmake/ide.cmake _deps/spdlog-src/cmake/utils.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build CMakeCache.txt CMakeFiles/3.27.8/CMakeCCompiler.cmake CMakeFiles/3.27.8/CMakeCXXCompiler.cmake CMakeFiles/3.27.8/CMakeRCCompiler.cmake CMakeFiles/3.27.8/CMakeSystem.cmake D$:/ProgramowanieGrafiki3D/CMakeLists.txt D$:/ProgramowanieGrafiki3D/src/Application/CMakeLists.txt D$:/ProgramowanieGrafiki3D/src/Assignments/CameraMovement/CMakeLists.txt D$:/ProgramowanieGrafiki3D/src/Assignments/Colors/CMakeLists.txt D$:/ProgramowanieGrafiki3D/src/Assignments/House/CMakeLists.txt D$:/ProgramowanieGrafiki3D/src/Assignments/Indices/CMakeLists.txt D$:/ProgramowanieGrafiki3D/src/Assignments/MeshesMaterials/CMakeLists.txt D$:/ProgramowanieGrafiki3D/src/Assignments/PVM/CMakeLists.txt D$:/ProgramowanieGrafiki3D/src/Assignments/Pyramid/CMakeLists.txt D$:/ProgramowanieGrafiki3D/src/Assignments/Resizing/CMakeLists.txt D$:/ProgramowanieGrafiki3D/src/Assignments/Textures/CMakeLists.txt D$:/ProgramowanieGrafiki3D/src/Assignments/Triangle/CMakeLists.txt D$:/ProgramowanieGrafiki3D/src/Assignments/Uniforms/CMakeLists.txt D$:/ProgramowanieGrafiki3D/src/Assignments/Zoom/CMakeLists.txt D$:/ProgramowanieGrafiki3D/src/Engine/CMakeLists.txt D$:/ProgramowanieGrafiki3D/src/ObjectReader/CMakeLists.txt D$:/ProgramowanieGrafiki3D/src/XeEngine/CMakeLists.txt D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/BasicConfigVersion-SameMajorVersion.cmake.in D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCInformation.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCXXInformation.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCommonLanguageInclude.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeDependentOption.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeGenericSystem.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeInitializeConfigs.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeLanguageInformation.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakePackageConfigHelpers.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeRCInformation.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeSystemSpecificInformation.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeSystemSpecificInitialize.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CheckCSourceCompiles.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CheckIncludeFile.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CheckLibraryExists.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/CMakeCommonCompilerMacros.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU-C.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU-CXX.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/ExternalProject.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/ExternalProject/shared_internal_commands.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/FetchContent.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/FetchContent/CMakeLists.cmake.in D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/FindGit.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/FindOpenGL.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/FindPackageHandleStandardArgs.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/FindPackageMessage.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/FindThreads.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/GNUInstallDirs.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Internal/CheckSourceCompiles.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-C-ABI.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-C.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-CXX-ABI.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-CXX.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-Initialize.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-windres.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/WindowsPaths.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/WriteBasicConfigVersionFile.cmake _deps/glfw-src/CMakeLists.txt _deps/glfw-src/CMake/cmake_uninstall.cmake.in _deps/glfw-src/CMake/glfw3.pc.in _deps/glfw-src/CMake/glfw3Config.cmake.in _deps/glfw-src/src/CMakeLists.txt _deps/glm-src/CMakeLists.txt _deps/glm-src/glm/CMakeLists.txt _deps/spdlog-src/CMakeLists.txt _deps/spdlog-src/cmake/ide.cmake _deps/spdlog-src/cmake/utils.cmake: phony
+build CMakeCache.txt CMakeFiles/3.27.8/CMakeCCompiler.cmake CMakeFiles/3.27.8/CMakeCXXCompiler.cmake CMakeFiles/3.27.8/CMakeRCCompiler.cmake CMakeFiles/3.27.8/CMakeSystem.cmake D$:/ProgramowanieGrafiki3D/CMakeLists.txt D$:/ProgramowanieGrafiki3D/src/Application/CMakeLists.txt D$:/ProgramowanieGrafiki3D/src/Assignments/CameraMovement/CMakeLists.txt D$:/ProgramowanieGrafiki3D/src/Assignments/Colors/CMakeLists.txt D$:/ProgramowanieGrafiki3D/src/Assignments/House/CMakeLists.txt D$:/ProgramowanieGrafiki3D/src/Assignments/Indices/CMakeLists.txt D$:/ProgramowanieGrafiki3D/src/Assignments/MeshesMaterials/CMakeLists.txt D$:/ProgramowanieGrafiki3D/src/Assignments/PVM/CMakeLists.txt D$:/ProgramowanieGrafiki3D/src/Assignments/Phong/CMakeLists.txt D$:/ProgramowanieGrafiki3D/src/Assignments/Pyramid/CMakeLists.txt D$:/ProgramowanieGrafiki3D/src/Assignments/Resizing/CMakeLists.txt D$:/ProgramowanieGrafiki3D/src/Assignments/Textures/CMakeLists.txt D$:/ProgramowanieGrafiki3D/src/Assignments/Triangle/CMakeLists.txt D$:/ProgramowanieGrafiki3D/src/Assignments/Uniforms/CMakeLists.txt D$:/ProgramowanieGrafiki3D/src/Assignments/Zoom/CMakeLists.txt D$:/ProgramowanieGrafiki3D/src/Engine/CMakeLists.txt D$:/ProgramowanieGrafiki3D/src/ObjectReader/CMakeLists.txt D$:/ProgramowanieGrafiki3D/src/XeEngine/CMakeLists.txt D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/BasicConfigVersion-SameMajorVersion.cmake.in D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCInformation.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCXXInformation.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCommonLanguageInclude.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeDependentOption.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeGenericSystem.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeInitializeConfigs.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeLanguageInformation.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakePackageConfigHelpers.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeRCInformation.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeSystemSpecificInformation.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeSystemSpecificInitialize.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CheckCSourceCompiles.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CheckIncludeFile.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CheckLibraryExists.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/CMakeCommonCompilerMacros.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU-C.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU-CXX.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/ExternalProject.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/ExternalProject/shared_internal_commands.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/FetchContent.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/FetchContent/CMakeLists.cmake.in D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/FindGit.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/FindOpenGL.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/FindPackageHandleStandardArgs.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/FindPackageMessage.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/FindThreads.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/GNUInstallDirs.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Internal/CheckSourceCompiles.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-C-ABI.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-C.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-CXX-ABI.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-CXX.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-Initialize.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-windres.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/WindowsPaths.cmake D$:/Programy/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.27/Modules/WriteBasicConfigVersionFile.cmake _deps/glfw-src/CMakeLists.txt _deps/glfw-src/CMake/cmake_uninstall.cmake.in _deps/glfw-src/CMake/glfw3.pc.in _deps/glfw-src/CMake/glfw3Config.cmake.in _deps/glfw-src/src/CMakeLists.txt _deps/glm-src/CMakeLists.txt _deps/glm-src/glm/CMakeLists.txt _deps/spdlog-src/CMakeLists.txt _deps/spdlog-src/cmake/ide.cmake _deps/spdlog-src/cmake/utils.cmake: phony
 
 
 #############################################

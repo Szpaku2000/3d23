@@ -152,3 +152,10 @@ D:/ProgramowanieGrafiki3D/cmake-build-debug/src/Assignments/Textures/CMakeFiles/
 D:/ProgramowanieGrafiki3D/cmake-build-debug/src/Assignments/Textures/CMakeFiles/install.dir
 D:/ProgramowanieGrafiki3D/cmake-build-debug/src/Assignments/Textures/CMakeFiles/install/local.dir
 D:/ProgramowanieGrafiki3D/cmake-build-debug/src/Assignments/Textures/CMakeFiles/install/strip.dir
+D:/ProgramowanieGrafiki3D/cmake-build-debug/src/Assignments/Phong/CMakeFiles/Phong.dir
+D:/ProgramowanieGrafiki3D/cmake-build-debug/src/Assignments/Phong/CMakeFiles/edit_cache.dir
+D:/ProgramowanieGrafiki3D/cmake-build-debug/src/Assignments/Phong/CMakeFiles/rebuild_cache.dir
+D:/ProgramowanieGrafiki3D/cmake-build-debug/src/Assignments/Phong/CMakeFiles/list_install_components.dir
+D:/ProgramowanieGrafiki3D/cmake-build-debug/src/Assignments/Phong/CMakeFiles/install.dir
+D:/ProgramowanieGrafiki3D/cmake-build-debug/src/Assignments/Phong/CMakeFiles/install/local.dir
+D:/ProgramowanieGrafiki3D/cmake-build-debug/src/Assignments/Phong/CMakeFiles/install/strip.dir

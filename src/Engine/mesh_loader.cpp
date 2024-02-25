@@ -16,6 +16,8 @@
 #include "Engine/Material.h"
 #include "Engine/PhongMaterial.h"
 #include "Engine/Mesh.h"
+#include "ColorMaterial.h"
+#include "texture.h"
 
 
 namespace {
@@ -24,7 +26,6 @@ namespace {
 }
 
 namespace xe {
-
 
     Mesh* load_mesh_from_obj(std::string path, std::string mtl_dir) {
 

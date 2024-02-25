@@ -7,10 +7,9 @@
 Warning: directory D:/ProgramowanieGrafiki3D/src/Assignments/Meshes does not exists.
 Warning: directory D:/ProgramowanieGrafiki3D/src/Assignments/Materials does not exists.
 Warning: directory D:/ProgramowanieGrafiki3D/src/Assignments/SceneGraph does not exists.
-Warning: directory D:/ProgramowanieGrafiki3D/src/Assignments/Phong does not exists.
 Warning: directory D:/ProgramowanieGrafiki3D/src/Assignments/PBR does not exists.
 Warning: directory D:/ProgramowanieGrafiki3D/src/Assignments/MultipleLights does not exists.
 Warning: directory D:/ProgramowanieGrafiki3D/src/Assignments/NormalMaps does not exists.
--- Configuring done (17.9s)
--- Generating done (0.2s)
+-- Configuring done (15.1s)
+-- Generating done (0.1s)
 -- Build files have been written to: D:/ProgramowanieGrafiki3D/cmake-build-debug
