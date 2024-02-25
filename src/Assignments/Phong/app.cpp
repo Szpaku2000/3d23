@@ -98,8 +98,8 @@ void SimpleShapeApplication::scroll_callback(double xoffset, double yoffset) {
 void SimpleShapeApplication::frame() {
     glm::mat4 PVM = camera()->projection() * camera()->view();
 
-    auto R = glm::mat3(VM);
-    auto N = glm::mat3(glm::cross(R[1], R[2]), glm::cross(R[2], R[0]), glm::cross(R[0], R[1]));
+//    auto R = glm::mat3(VM);
+//    auto N = glm::mat3(glm::cross(R[1], R[2]), glm::cross(R[2], R[0]), glm::cross(R[0], R[1]));
     glBindBuffer(GL_UNIFORM_BUFFER, u_pvm_buffer_);
     glBufferSubData(GL_UNIFORM_BUFFER, 0, sizeof(glm::mat4), &PVM[0]);
     glBindBuffer(GL_UNIFORM_BUFFER, 0);
