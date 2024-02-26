@@ -46,7 +46,7 @@ void SimpleShapeApplication::init() {
     GLuint v_buffer_handle_uniforms_colors;
     glGenBuffers(1, &v_buffer_handle_uniforms_colors);
     OGL_CALL(glBindBuffer(GL_UNIFORM_BUFFER, v_buffer_handle_uniforms_colors));
-    glBufferData(GL_UNIFORM_BUFFER, sizeof(glm::mat4), nullptr, GL_STATIC_DRAW);
+    glBufferData(GL_UNIFORM_BUFFER, 16 * sizeof(GLfloat), nullptr, GL_STATIC_DRAW);
     glBindBufferBase(GL_UNIFORM_BUFFER, 0, v_buffer_handle_uniforms_colors);
 
     glBufferSubData(GL_UNIFORM_BUFFER, 0, sizeof(GLfloat), &strength);
@@ -55,8 +55,14 @@ void SimpleShapeApplication::init() {
     // Uniforms position
     glGenBuffers(1, &u_pvm_buffer_);
     OGL_CALL(glBindBuffer(GL_UNIFORM_BUFFER, u_pvm_buffer_));
-    glBufferData(GL_UNIFORM_BUFFER, sizeof(glm::mat4), nullptr, GL_STATIC_DRAW);
+    glBufferData(GL_UNIFORM_BUFFER, 2*sizeof(glm::mat4), nullptr, GL_STATIC_DRAW);
     glBindBufferBase(GL_UNIFORM_BUFFER, 1, u_pvm_buffer_);
+
+    // Transformation
+    glGenBuffers(1, &transformations);
+    glBindBuffer(GL_UNIFORM_BUFFER, transformations);
+    glBufferData(GL_UNIFORM_BUFFER, sizeof(glm::mat4) + sizeof(glm::mat3), nullptr, GL_STATIC_DRAW);
+    glBindBufferBase(GL_UNIFORM_BUFFER, 2, transformations);
 
     // This setups a Vertex Array Object (VAO) that  encapsulates
     // the state of all vertex buffers needed for rendering
@@ -98,10 +104,15 @@ void SimpleShapeApplication::scroll_callback(double xoffset, double yoffset) {
 void SimpleShapeApplication::frame() {
     glm::mat4 PVM = camera()->projection() * camera()->view();
 
-//    auto R = glm::mat3(VM);
-//    auto N = glm::mat3(glm::cross(R[1], R[2]), glm::cross(R[2], R[0]), glm::cross(R[0], R[1]));
+    glm::mat4 VM = camera()->view() * glm::mat4(1.0);
+    auto R = glm::mat3(VM);
+    auto N = glm::mat3(glm::cross(R[1], R[2]), glm::cross(R[2], R[0]), glm::cross(R[0], R[1]));
     glBindBuffer(GL_UNIFORM_BUFFER, u_pvm_buffer_);
     glBufferSubData(GL_UNIFORM_BUFFER, 0, sizeof(glm::mat4), &PVM[0]);
+    glBindBuffer(GL_UNIFORM_BUFFER, transformations);
+    glBufferSubData(GL_UNIFORM_BUFFER, 0, sizeof(glm::mat4), &VM[0]);
+    glBindBuffer(GL_UNIFORM_BUFFER, transformations);
+    glBufferSubData(GL_UNIFORM_BUFFER, 0, sizeof(glm::mat3), &N[0]);
     glBindBuffer(GL_UNIFORM_BUFFER, 0);
     // Binding the VAO will setup all the required vertex buffers.
     glBindVertexArray(vao_);

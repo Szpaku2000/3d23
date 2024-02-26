@@ -207,12 +207,12 @@
 			"id" : "spdlog::@eb35cfce7893ccfeff1e"
 		},
 		{
-			"backtrace" : 1,
-			"id" : "application::@63f4a4cc0e32de8c050b"
-		},
-		{
 			"backtrace" : 2,
 			"id" : "objreader::@fe69842f7a07b275738d"
+		},
+		{
+			"backtrace" : 1,
+			"id" : "application::@63f4a4cc0e32de8c050b"
 		},
 		{
 			"backtrace" : 2,

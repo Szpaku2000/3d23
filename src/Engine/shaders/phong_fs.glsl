@@ -3,7 +3,7 @@
 layout(location=0) out vec4 vFragColor;
 in vec4 aColor;
 in vec3 vertex_normals_in_vs;
-in vec4 vertex_coords_in_vs;
+in vec3 vertex_coords_in_vs;
 in vec2 vertex_texcoords;
 uniform sampler2D map_Kd;
 
@@ -19,5 +19,5 @@ void main() {
     } else {
         vFragColor = Kd*texture(map_Kd, vertex_texcoords);
     }
-    vFragColor = abs(vertex_coords_in_vs);
+    vFragColor.rgb = abs(vertex_coords_in_vs);
 }

@@ -52,6 +52,7 @@ private:
     int w, h;
 
     GLuint u_pvm_buffer_;
+    GLuint transformations;
     Camera *camera_;
     CameraControler *controler_;
 

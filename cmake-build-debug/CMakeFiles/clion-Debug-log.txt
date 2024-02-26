@@ -10,6 +10,6 @@ Warning: directory D:/ProgramowanieGrafiki3D/src/Assignments/SceneGraph does not
 Warning: directory D:/ProgramowanieGrafiki3D/src/Assignments/PBR does not exists.
 Warning: directory D:/ProgramowanieGrafiki3D/src/Assignments/MultipleLights does not exists.
 Warning: directory D:/ProgramowanieGrafiki3D/src/Assignments/NormalMaps does not exists.
--- Configuring done (15.1s)
+-- Configuring done (12.7s)
 -- Generating done (0.1s)
 -- Build files have been written to: D:/ProgramowanieGrafiki3D/cmake-build-debug
