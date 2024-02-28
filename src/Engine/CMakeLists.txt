@@ -13,6 +13,7 @@ add_library(engine
         ColorMaterial.h
         texture.cpp
         texture.h
+        Light.h
 )
 
 target_link_libraries(engine PUBLIC objreader)

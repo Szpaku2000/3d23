@@ -150,12 +150,20 @@ namespace xe {
 
         xe::PhongMaterial *make_phong_material(const xe::mtl_material_t &mat, std::string mtl_dir) {
 
+            glm::vec3 specular_light;
+            glm::vec3 ambient_light;
             glm::vec4 color;
+
             for (int i = 0; i < 3; i++)
                 color[i] = mat.diffuse[i];
+            GLfloat specular_strength = mat.shininess;
             color[3] = 1.0;
+            for (int i = 0; i < 3; i++) {
+                specular_light[i] = mat.specular[i];
+                ambient_light[i] = mat.ambient[i];
+            }
             std::cout << "Adding ColorMaterial " << glm::to_string(color) << std::endl;
-            auto material = new xe::PhongMaterial(color);
+            auto material = new xe::PhongMaterial(color, ambient_light, specular_light, specular_strength);
             if (!mat.diffuse_texname.empty()) {
                 auto texture = xe::create_texture(mtl_dir + "/" + mat.diffuse_texname);
                 std::cout << "Adding Texture " << mat.diffuse_texname << " " << texture << std::endl;

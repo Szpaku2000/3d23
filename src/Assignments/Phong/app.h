@@ -13,6 +13,7 @@
 #include "glm/glm.hpp"
 #include "camera.h"
 #include "camera_controler.h"
+#include "Engine/Light.h"
 #include <Engine/Mesh.h>
 #include <Engine/Material.h>
 
@@ -47,6 +48,10 @@ public:
         meshes_.push_back(mesh);
     }
 
+    void add_light(const xe::PointLight &p_light) {
+        p_lights_.push_back(p_light);
+    }
+
 private:
     GLuint vao_;
     int w, h;
@@ -57,4 +62,9 @@ private:
     CameraControler *controler_;
 
     std::vector<xe::Mesh*> meshes_;
+
+    GLuint lights_buffer_;
+
+    glm::vec3 ambient_;
+    std::vector<xe::PointLight> p_lights_;
 };

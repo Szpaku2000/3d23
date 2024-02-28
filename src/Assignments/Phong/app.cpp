@@ -10,7 +10,7 @@
 
 #include "Application/utils.h"
 #include "Engine/mesh_loader.h"
-#include "Engine/Material.h"
+#include "Engine/PhongMaterial.h"
 
 #include "glm/glm.hpp"
 #include "glm/gtc/constants.hpp"
@@ -20,6 +20,10 @@
 #include "Engine/ColorMaterial.h"
 #include "Engine/PhongMaterial.h"
 
+struct SceneLights {
+    xe::PointLight light[24];
+    int num_lights;
+};
 
 void SimpleShapeApplication::init() {
     // A utility function that reads the shader sources, compiles them and creates the program object
@@ -58,11 +62,31 @@ void SimpleShapeApplication::init() {
     glBufferData(GL_UNIFORM_BUFFER, 2*sizeof(glm::mat4), nullptr, GL_STATIC_DRAW);
     glBindBufferBase(GL_UNIFORM_BUFFER, 1, u_pvm_buffer_);
 
+    glm::vec3 cameraPos = glm::vec3(0.0f, 0.0f, 6.0f);
+    glm::vec3 cameraTarget = glm::vec3(0.0f, 0.0f, 0.0f);
+    glm::vec3 upVector = glm::vec3(0.0f, 1.0f, 0.0f);
+
+    glBindBuffer(GL_UNIFORM_BUFFER, u_pvm_buffer_);
+
     // Transformation
     glGenBuffers(1, &transformations);
     glBindBuffer(GL_UNIFORM_BUFFER, transformations);
     glBufferData(GL_UNIFORM_BUFFER, sizeof(glm::mat4) + sizeof(glm::mat3), nullptr, GL_STATIC_DRAW);
     glBindBufferBase(GL_UNIFORM_BUFFER, 2, transformations);
+
+    add_light(*new xe::PointLight({ 0.0, 0.3, 0.5 }, { 0.0, 0.0, 1.0 }, { 1.0, 1.0, 1.0 }));
+    add_light(*new xe::PointLight({ -0.3, -0.3, 0.5 }, { 0.25, 1.0, 0.0 }, { 1.0, 1.0, 1.0 }));
+    add_light(*new xe::PointLight({ 0.3, -0.3, 0.5 }, { 1.0, 0.0, 0.75 }, { 1.0, 1.0, 1.0 }));
+//    xe::PhongMaterial::set_ambient({ 0.5f, 0.5f, 0.5f });
+
+    glGenBuffers(1, &lights_buffer_);
+    glBindBuffer(GL_UNIFORM_BUFFER, lights_buffer_);
+    glBufferData(GL_UNIFORM_BUFFER, sizeof(SceneLights), nullptr, GL_STATIC_DRAW);
+
+    glBindBuffer(GL_UNIFORM_BUFFER, 0);
+
+    glBindBufferBase(GL_UNIFORM_BUFFER, 3, lights_buffer_);
+    glBindBuffer(GL_UNIFORM_BUFFER, lights_buffer_);
 
     // This setups a Vertex Array Object (VAO) that  encapsulates
     // the state of all vertex buffers needed for rendering
@@ -107,6 +131,13 @@ void SimpleShapeApplication::frame() {
     glm::mat4 VM = camera()->view() * glm::mat4(1.0);
     auto R = glm::mat3(VM);
     auto N = glm::mat3(glm::cross(R[1], R[2]), glm::cross(R[2], R[0]), glm::cross(R[0], R[1]));
+    glBindBuffer(GL_UNIFORM_BUFFER, lights_buffer_);
+    SceneLights scene_lights{};
+    scene_lights.num_lights = p_lights_.size();
+
+    for(int i = 0; i < scene_lights.num_lights; i++) scene_lights.light[i] = p_lights_[i];
+
+    glBufferSubData(GL_UNIFORM_BUFFER, 0, sizeof(SceneLights), &scene_lights);
     glBindBuffer(GL_UNIFORM_BUFFER, u_pvm_buffer_);
     glBufferSubData(GL_UNIFORM_BUFFER, 0, sizeof(glm::mat4), &PVM[0]);
     glBindBuffer(GL_UNIFORM_BUFFER, transformations);

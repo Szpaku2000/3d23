@@ -9,11 +9,14 @@
 
 namespace xe {
 
-    GLuint PhongMaterial::color_uniform_buffer_ = 0u;
+
+    GLuint PhongMaterial::material_uniform_buffer_ = 0u;
+    GLint PhongMaterial::uniform_ambient_ = 0;
     GLuint PhongMaterial::shader_ = 0u;
     GLint  PhongMaterial::uniform_map_Kd_location_ = 0;
 
     void PhongMaterial::bind() {
+        glUseProgram(program());
         GLint use_map_Kd = 0;
         if (texture_ > 0){
             use_map_Kd = 1;
@@ -21,11 +24,15 @@ namespace xe {
             glActiveTexture(GL_TEXTURE0 + texture_unit_);
             glBindTexture(GL_TEXTURE_2D, texture_);
         }
-        glBindBufferBase(GL_UNIFORM_BUFFER, 0, color_uniform_buffer_);
+        glBindBufferBase(GL_UNIFORM_BUFFER, 0, material_uniform_buffer_);
         glUseProgram(program());
-        glBindBuffer(GL_UNIFORM_BUFFER, color_uniform_buffer_);
-        glBufferSubData(GL_UNIFORM_BUFFER, 0, sizeof(glm::vec4), &color_[0]);
-        glBufferSubData(GL_UNIFORM_BUFFER, sizeof(glm::vec4), sizeof(GLint), &use_map_Kd);
+        glBindBuffer(GL_UNIFORM_BUFFER, material_uniform_buffer_);
+
+        glBufferSubData(GL_UNIFORM_BUFFER, 0, sizeof(glm::vec4), &Kd_[0]);
+        glBufferSubData(GL_UNIFORM_BUFFER, 3 * sizeof(glm::vec4), sizeof(GLint), &use_map_Kd);
+        glBufferSubData(GL_UNIFORM_BUFFER, sizeof(glm::vec4), sizeof(glm::vec3), &Ks_[0]);
+        glBufferSubData(GL_UNIFORM_BUFFER, 2 * sizeof(glm::vec4), sizeof(glm::vec4), &Ka_[0]);
+        glBufferSubData(GL_UNIFORM_BUFFER, 3 * sizeof(glm::vec4) + sizeof(GLfloat), sizeof(GLfloat), &Ns);
         glBindBuffer(GL_UNIFORM_BUFFER, 0u);
 
     }
@@ -46,11 +53,15 @@ namespace xe {
             std::cerr << "Cannot get uniform map_Kd location";
         }
 
-        glGenBuffers(1, &color_uniform_buffer_);
+        glGenBuffers(1, &material_uniform_buffer_);
 
-        glBindBuffer(GL_UNIFORM_BUFFER, color_uniform_buffer_);
-        glBufferData(GL_UNIFORM_BUFFER, sizeof(glm::vec4) + sizeof(GLint), nullptr, GL_STATIC_DRAW);
+        glBindBuffer(GL_UNIFORM_BUFFER, material_uniform_buffer_);
+        glBufferData(GL_UNIFORM_BUFFER, 3 * sizeof(glm::vec4) + 2 * sizeof(GLfloat), nullptr, GL_STATIC_DRAW);
         glBindBuffer(GL_UNIFORM_BUFFER, 0u);
+
+        uniform_map_Kd_location_ = glGetUniformLocation(shader_, "map_Kd");
+        uniform_ambient_ = glGetUniformLocation(shader_, "ambient_light");
+
 #if __APPLE__
         auto u_modifiers_index = glGetUniformBlockIndex(program, "Color");
         if (u_modifiers_index == -1) {
@@ -70,20 +81,9 @@ namespace xe {
 #endif
     }
 
-    GLuint PhongMaterial::get_texture() const {
-        return texture_;
-    }
-
-    void PhongMaterial::set_texture(GLuint texture) {
-        texture_ = texture;
-    }
-
-    GLuint PhongMaterial::get_texture_unit() const {
-        return texture_unit_;
-    }
-
-    void PhongMaterial::set_texture_unit(GLuint textureUnit) {
-        texture_unit_ = textureUnit;
+    void PhongMaterial::unbind() {
+        glBindBuffer(GL_UNIFORM_BUFFER, 0u);
+        glBindTexture(GL_TEXTURE_2D, 0u);
     }
 
 }
